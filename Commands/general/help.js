@@ -11,7 +11,7 @@ name: "help",//Command
 
 run: async(client, wolf) => {
 
- // try {
+  try {
 if(!wolf.channel.permissionsFor(wolf.guild.me).has("SEND_MESSAGES")) return;
 
 let embed = new Discord.MessageEmbed()
@@ -106,12 +106,12 @@ let row = new MessageActionRow()
     embed: embed,
       component: row
     })
-    /*
+    
 } catch(err){
 
 return;
 
-  */
+  
 },
 }
 
